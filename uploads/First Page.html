@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)file:///C:/Users/Monil%20Shah/Desktop/WD%20Pracs/tp.html?name=LIk&Email=asss&sub=Submit -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!--<base href="C:\Users\Monil Shah\Desktop\WD Pracs\imgs\">--><base href=".">
+	<title>First Page</title>
+	
+	<meta name="description" content="HTML AA">
+	<meta name="authour" content="Monil">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript">
+		function check(){
+			alert("HEELLO");
+			var k=0;
+			var name=document.getElementById('name').value;
+			var email=document.getElementById('email').value;
+			if(name=="")
+				window.alert("PLEASE ENter Name");
+			if(email=="")
+				alert("Pls ENter Email");
+			if(name.match(/^[a-zA-Z]+$/))
+				k=1;
+			// var pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; 
+			if(email.match(/^[a-z]+@[a-zA-Z]+?\.[a-zA-Z]{2,4}$/))
+				k=1;
+			if (k==0)
+				alert("ENter Proper NAme");	
+				
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<br>
+		<fieldset>
+			<legend>Personal Details</legend>
+			Name:<input type="text" name="name" id="name"><br>
+			Email:<input type="text" name="Email" id="email">
+			<input type="submit" name="sub" onclick="check();">
+		</fieldset>
+
+</form></body></html>
