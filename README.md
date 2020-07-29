@@ -6,4 +6,4 @@ the donors. To use the project:
 1. Download/Clone the repository.
 2. Start the server(Tomcat and MySQL).
 3. Import the database (check for the entries).
-4. Run index.php
+4. Run index.php.
